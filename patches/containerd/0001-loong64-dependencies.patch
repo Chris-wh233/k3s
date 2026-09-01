@@ -1,0 +1,16 @@
+diff --git a/go.mod b/go.mod
+index 45d65bb..50f739c 100644
+--- a/go.mod
++++ b/go.mod
+@@ -153,3 +153,11 @@ replace (
+ 	golang.org/x/crypto => golang.org/x/crypto v0.0.0-20220315160706-3147a52a75dd
+ 	google.golang.org/genproto => google.golang.org/genproto v0.0.0-20200224152610-e50cd9704f63
+ )
++
++replace go.etcd.io/bbolt => go.etcd.io/bbolt v1.3.7
++
++replace golang.org/x/sys => golang.org/x/sys v0.0.0-20221010170243-090e33056c14
++
++replace github.com/opencontainers/runc => ../../opencontainers/runc
++
++replace github.com/containerd/btrfs => ../btrfs

@@ -1,0 +1,12 @@
+diff --git a/btrfs.c b/btrfs.c
+index 8f1449c..521bf01 100644
+--- a/btrfs.c
++++ b/btrfs.c
+@@ -12,6 +12,7 @@
+ */
+ 
+ #include <stddef.h>
++#include <string.h>
+ #include <linux/magic.h>
+ #include <btrfs/ioctl.h>
+ #include <btrfs/ctree.h>

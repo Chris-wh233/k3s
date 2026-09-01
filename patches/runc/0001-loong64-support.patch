@@ -1,0 +1,21 @@
+diff --git a/go.mod b/go.mod
+index 7d5e04b..81cd501 100644
+--- a/go.mod
++++ b/go.mod
+@@ -24,3 +24,5 @@ require (
+ 	golang.org/x/sys v0.0.0-20211116061358-0a5406a5449c
+ 	google.golang.org/protobuf v1.27.1
+ )
++
++replace golang.org/x/sys => golang.org/x/sys v0.0.0-20221010170243-090e33056c14
+diff --git a/libcontainer/system/syscall_linux_64.go b/libcontainer/system/syscall_linux_64.go
+--- a/libcontainer/system/syscall_linux_64.go
++++ b/libcontainer/system/syscall_linux_64.go
+@@ -1,5 +1,5 @@
+-//go:build linux && (arm64 || amd64 || mips || mipsle || mips64 || mips64le || ppc || ppc64 || ppc64le || riscv64 || s390x)
++//go:build linux && (arm64 || amd64 || loong64 || mips || mipsle || mips64 || mips64le || ppc || ppc64 || ppc64le || riscv64 || s390x)
+ // +build linux
+-// +build arm64 amd64 mips mipsle mips64 mips64le ppc ppc64 ppc64le riscv64 s390x
++// +build arm64 amd64 loong64 mips mipsle mips64 mips64le ppc ppc64 ppc64le riscv64 s390x
+ 
+ package system
